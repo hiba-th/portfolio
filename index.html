@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en" data-side="mm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hiba Fethallah — Portfolio</title>
+<meta name="description" content="Hiba Fethallah: video, motion and photography on one side; web, AI and cloud development on the other.">
+<meta name="theme-color" content="#F5EFEC">
+
+<!-- Tab and home-screen icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+<!-- Link preview card (LinkedIn, WhatsApp, Facebook, X). Images need the full URL. -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hiba-fethallah.vercel.app/">
+<meta property="og:site_name" content="Hiba Fethallah">
+<meta property="og:title" content="Hiba Fethallah — Multimedia Creator &amp; Software Developer">
+<meta property="og:description" content="Video, motion and photography on one side; web, AI and cloud development on the other.">
+<meta property="og:image" content="https://hiba-fethallah.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hiba Fethallah's Memoji between a pink Multimedia side and a navy IT side">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hiba Fethallah — Multimedia Creator &amp; Software Developer">
+<meta name="twitter:description" content="Video, motion and photography on one side; web, AI and cloud development on the other.">
+<meta name="twitter:image" content="https://hiba-fethallah.vercel.app/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Mr+Dafoe&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=18">
+<script>document.documentElement.classList.add('intro');</script>
+</head>
+<body>
+
+<!-- Page-wide background behind the sections: parallax orbs / grid + cursor glow -->
+<div class="page-bg" aria-hidden="true">
+  <div class="pbg-layer pbg-layer--mm">
+    <div class="px px--1"><div class="pbg-orb pbg-orb--pink orb-a"></div></div>
+    <div class="px px--2"><div class="pbg-orb pbg-orb--peach orb-b"></div></div>
+    <div class="px px--3"><div class="pbg-orb pbg-orb--lavender orb-c"></div></div>
+  </div>
+  <div class="pbg-layer pbg-layer--it">
+    <div class="pbg-grid"></div>
+    <div class="px px--1"><div class="pbg-orb pbg-orb--blue orb-a"></div></div>
+    <div class="px px--3"><div class="pbg-orb pbg-orb--sky orb-b"></div></div>
+  </div>
+  <div class="pbg-glow"></div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="logo">Hiba Fethallah</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- Dynamic background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-layer bg-layer--mm">
+      <div class="orb orb--pink orb-a"></div>
+      <div class="orb orb--peach orb-b"></div>
+      <div class="orb orb--lavender orb-c"></div>
+    </div>
+    <div class="bg-layer bg-layer--it">
+      <div class="bg-grid grid-move"></div>
+      <div class="orb orb--blue orb-a"></div>
+      <div class="orb orb--sky orb-b"></div>
+    </div>
+  </div>
+
+  <main id="top" class="hero">
+
+    <!-- Badge stage -->
+    <section class="hero-col badge-col" aria-label="Badge">
+      <div id="stage" class="stage">
+
+        <div class="badge-shadow" aria-hidden="true"></div>
+
+        <div class="badge-tilt">
+        <div class="badge-sway">
+        <button type="button" id="badge" class="badge" aria-label="Flip badge to the IT side">
+
+          <!-- card edges (thickness visible while turning) -->
+          <div class="edge edge--l" aria-hidden="true"></div>
+          <div class="edge edge--r" aria-hidden="true"></div>
+          <div class="edge edge--t" aria-hidden="true"></div>
+          <div class="edge edge--b" aria-hidden="true"></div>
+
+          <!-- FRONT: Multimedia (soft) -->
+          <div class="face face--front">
+            <div class="sheen" aria-hidden="true"></div>
+            <div class="glare" aria-hidden="true"></div>
+            <div class="blob blob--1" aria-hidden="true"></div>
+            <div class="blob blob--2" aria-hidden="true"></div>
+            <div class="blob blob--3" aria-hidden="true"></div>
+
+            <div class="front-body">
+              <div class="slot" aria-hidden="true"></div>
+              <div class="front-labels"><span>SIDE A</span><span>CREATIVE</span></div>
+              <div class="front-photo memoji-still"><img src="assets/images/memoji/memoji-peace.png" alt=""></div>
+              <div class="front-id">
+                <div class="front-name">Hiba Fethallah</div>
+                <div class="front-role">Multimedia Designer</div>
+              </div>
+              <div class="chips">
+                <span class="chip">Videography</span>
+                <span class="chip">Editing</span>
+                <span class="chip">Motion</span>
+                <span class="chip">Photography</span>
+              </div>
+              <div class="front-hint">
+                <svg class="flip-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+                Flip for the IT side
+              </div>
+            </div>
+          </div>
+
+          <!-- BACK: IT (technical) -->
+          <div class="face face--back">
+            <div class="sheen" aria-hidden="true"></div>
+            <div class="glare" aria-hidden="true"></div>
+            <div class="back-body">
+              <div class="slot" aria-hidden="true"></div>
+              <div class="back-labels"><span>SIDE_B</span><span class="accent">// TECHNICAL</span></div>
+              <div class="back-head">
+                <div class="back-photo memoji-still"><img src="assets/images/memoji/memoji-smile.png" alt=""></div>
+                <div class="back-id">
+                  <div class="back-name">Hiba Fethallah</div>
+                  <div class="back-role">&gt; IT Specialist</div>
+                </div>
+              </div>
+              <div class="kv">
+                <div class="kv-row"><span>focus</span><span>web · AI · cloud</span></div>
+                <div class="kv-row"><span>stack</span><span>React · .NET · Python</span></div>
+                <div class="kv-row"><span>cloud</span><span>AWS · Docker</span></div>
+                <div class="kv-row"><span>id</span><span>USTHB · HPC</span></div>
+              </div>
+              <div class="back-foot">
+                <div class="barcode" aria-hidden="true"></div>
+                <div class="back-hint">
+                  <span>flip --side=A</span>
+                  <svg class="flip-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </button>
+        </div>
+        </div>
+
+        <!-- Lanyard: wide printed strap; one end exits the top, the other the left -->
+        <svg class="lanyard" aria-hidden="true" width="1400" height="1060" viewBox="0 0 1400 1060">
+          <defs>
+            <path id="strapTop" d="M1164 880 C 1150 760, 1205 650, 1168 520 S 1098 290, 1132 130 S 1082 -20, 1060 -90"></path>
+            <path id="strapLeft" d="M1178 880 C 1222 790, 1110 756, 980 800 S 760 904, 620 884 S 380 822, 240 900 S 40 966, -140 944"></path>
+            <!-- same curve reversed so the printed text reads left-to-right -->
+            <path id="strapLeftText" d="M-140 944 C 40 966, 100 978, 240 900 C 380 822, 480 864, 620 884 C 760 904, 850 844, 980 800 C 1110 756, 1222 790, 1178 880"></path>
+            <filter id="ripple" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="7"></feGaussianBlur>
+            </filter>
+            <mask id="maskTop" maskUnits="userSpaceOnUse" x="-200" y="-200" width="1800" height="1400">
+              <use href="#strapTop" fill="none" stroke="#FFFFFF" stroke-width="56"></use>
+            </mask>
+            <mask id="maskLeft" maskUnits="userSpaceOnUse" x="-200" y="-200" width="1800" height="1400">
+              <use href="#strapLeft" fill="none" stroke="#FFFFFF" stroke-width="56"></use>
+            </mask>
+            <pattern id="weaveA" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+              <rect width="5" height="2" fill="#FFFFFF" fill-opacity="0.13"></rect>
+            </pattern>
+            <pattern id="weaveB" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-40)">
+              <rect width="5" height="1.5" fill="#000000" fill-opacity="0.12"></rect>
+            </pattern>
+            <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#7E828A"></stop>
+              <stop offset="0.35" stop-color="#F4F5F7"></stop>
+              <stop offset="0.6" stop-color="#B9BDC4"></stop>
+              <stop offset="1" stop-color="#6F737B"></stop>
+            </linearGradient>
+            <linearGradient id="metalV" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F4F5F7"></stop>
+              <stop offset="0.5" stop-color="#A8ACB4"></stop>
+              <stop offset="1" stop-color="#E2E4E8"></stop>
+            </linearGradient>
+            <linearGradient id="foldShade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#000000" stop-opacity="0.28"></stop>
+              <stop offset="0.5" stop-color="#000000" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+
+          <!-- strap going off the left edge -->
+          <use href="#strapLeft" fill="none" class="s-edge" stroke-width="56"></use>
+          <use href="#strapLeft" fill="none" class="s-base" stroke-width="52"></use>
+          <use href="#strapLeft" fill="none" class="s-stripe" stroke-width="42"></use>
+          <use href="#strapLeft" fill="none" class="s-base" stroke-width="39"></use>
+          <use href="#strapLeft" fill="none" stroke="url(#weaveB)" stroke-width="52" opacity="0.5"></use>
+          <text font-family="Manrope, sans-serif" font-size="15" font-weight="700" letter-spacing="3" class="s-text" dominant-baseline="central"><textPath href="#strapLeftText" startOffset="20">HIBA FETHALLAH   •   MULTIMEDIA   •   IT   •   PORTFOLIO   •   HIBA FETHALLAH   •   MULTIMEDIA   •   IT   •   PORTFOLIO   •   HIBA FETHALLAH   •   MULTIMEDIA   •   IT   •   PORTFOLIO   •   HIBA FETHALLAH   •   MULTIMEDIA   •   IT   •</textPath></text>
+          <g mask="url(#maskLeft)">
+            <use href="#strapLeft" fill="none" class="r-lo" stroke="#000000" stroke-width="56" stroke-dasharray="46 88" filter="url(#ripple)"></use>
+            <use href="#strapLeft" fill="none" class="r-hi" stroke="#FFFFFF" stroke-width="56" stroke-dasharray="30 104" stroke-dashoffset="-62" filter="url(#ripple)"></use>
+          </g>
+
+          <!-- strap going off the top edge -->
+          <use href="#strapTop" fill="none" class="s-edge" stroke-width="56"></use>
+          <use href="#strapTop" fill="none" class="s-base" stroke-width="52"></use>
+          <use href="#strapTop" fill="none" class="s-stripe" stroke-width="42"></use>
+          <use href="#strapTop" fill="none" class="s-base" stroke-width="39"></use>
+          <use href="#strapTop" fill="none" stroke="url(#weaveB)" stroke-width="52" opacity="0.5"></use>
+          <text font-family="Manrope, sans-serif" font-size="15" font-weight="700" letter-spacing="3" class="s-text" dominant-baseline="central"><textPath href="#strapTop" startOffset="70">HIBA FETHALLAH   •   MULTIMEDIA   •   IT   •   PORTFOLIO   •   HIBA FETHALLAH   •   MULTIMEDIA   •   IT   •   PORTFOLIO   •   HIBA FETHALLAH   •   MULTIMEDIA   •   IT   •</textPath></text>
+          <g mask="url(#maskTop)">
+            <use href="#strapTop" fill="none" class="r-lo" stroke="#000000" stroke-width="56" stroke-dasharray="52 96" filter="url(#ripple)"></use>
+            <use href="#strapTop" fill="none" class="r-hi" stroke="#FFFFFF" stroke-width="56" stroke-dasharray="34 114" stroke-dashoffset="-70" filter="url(#ripple)"></use>
+          </g>
+
+          <!-- sewn strap end -->
+          <path class="s-tab" d="M1142 868 L1198 868 L1194 948 L1146 948 Z" stroke-width="2"></path>
+          <path d="M1142 868 L1198 868 L1194 948 L1146 948 Z" fill="url(#weaveB)" opacity="0.5"></path>
+          <path d="M1142 868 L1198 868 L1194 948 L1146 948 Z" fill="url(#foldShade)" opacity="0.6"></path>
+          <rect x="1153" y="898" width="34" height="40" fill="none" class="s-stitch" stroke-opacity="0.85" stroke-width="1.3" stroke-dasharray="2.5 2"></rect>
+          <path d="M1153 898 L1187 938 M1187 898 L1153 938" class="s-stitch" stroke-opacity="0.7" stroke-width="1.3" stroke-dasharray="2.5 2"></path>
+
+          <!-- metal crimp end -->
+          <rect x="1140" y="944" width="60" height="20" rx="3" fill="url(#metal)" stroke="#6A6E76" stroke-width="1"></rect>
+          <path d="M1142 950 H1198 M1142 958 H1198" stroke="#8E929A" stroke-width="0.8"></path>
+          <!-- swivel -->
+          <rect x="1164" y="963" width="12" height="9" rx="2" fill="url(#metal)" stroke="#6A6E76" stroke-width="1"></rect>
+          <ellipse cx="1170" cy="977" rx="7" ry="5" fill="none" stroke="url(#metalV)" stroke-width="3"></ellipse>
+          <!-- lobster clasp hooked through the card's punched slot -->
+          <path d="M1170 982 C 1183 986, 1187 1012, 1180 1032 C 1177 1040, 1163 1040, 1160 1032 C 1153 1012, 1157 986, 1170 982 Z" fill="none" stroke="url(#metal)" stroke-width="5.5" stroke-linejoin="round"></path>
+          <path d="M1170 982 C 1183 986, 1187 1012, 1180 1032 C 1177 1040, 1163 1040, 1160 1032 C 1153 1012, 1157 986, 1170 982 Z" fill="none" stroke="#5F636B" stroke-width="0.8"></path>
+          <rect x="1179" y="996" width="5" height="9" rx="1.5" fill="url(#metalV)" stroke="#6A6E76" stroke-width="0.8"></rect>
+        </svg>
+      </div>
+
+      <div class="switch" role="group" aria-label="Choose badge side">
+        <button type="button" class="seg" data-side="mm" aria-pressed="true">Multimedia</button>
+        <button type="button" class="seg" data-side="it" aria-pressed="false">IT</button>
+      </div>
+    </section>
+
+    <!-- Role explanation -->
+    <section class="hero-col role-col" aria-live="polite">
+
+      <div class="panel panel--mm" data-panel="mm">
+        <div class="panel-inner">
+          <div class="eyebrow">SIDE A — THE CREATIVE ROLE</div>
+          <h1>Multimedia <em>Designer</em></h1>
+          <p class="role-text">I shoot it, cut it and make it move. Videos and photos built to stop the scroll.</p>
+          <ul class="role-list">
+            <li><span class="num">01</span>Videography &amp; photography</li>
+            <li><span class="num">02</span>Video editing &amp; color</li>
+            <li><span class="num">03</span>Motion graphics</li>
+          </ul>
+          <div class="actions">
+            <a href="#work" class="btn btn--primary">See multimedia work</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel--it" data-panel="it" hidden>
+        <div class="panel-inner">
+          <div class="eyebrow">SIDE B — THE TECHNICAL ROLE</div>
+          <h1>IT <span>Specialist</span></h1>
+          <p class="role-text">I build web apps, AI tools and cloud services. Clean code, fast results.</p>
+          <ul class="role-list">
+            <li><span class="num">&gt;</span>Web apps · React, .NET, Node.js</li>
+            <li><span class="num">&gt;</span>AI · machine learning &amp; chatbots</li>
+            <li><span class="num">&gt;</span>Cloud &amp; automation · AWS, Docker, n8n</li>
+          </ul>
+          <div class="actions">
+            <a href="#work" class="btn btn--primary">See IT projects</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+</div>
+
+<!-- ======================= WORK ======================= -->
+<section id="work" class="section">
+  <div class="wrap">
+
+    <!-- Multimedia: selected projects -->
+    <div class="panel--mm" data-panel="mm">
+      <div class="sec-head">
+        <div class="sec-eyebrow">01 — WORK</div>
+        <h2 class="sec-title">Selected <em>work</em></h2>
+      </div>
+      <!-- Folders: the tabs stay in a fixed order; a tab shows its content in
+           the panel below (js: folder tabs). A card opens the work in the
+           lightbox. Files live in assets/work/. -->
+      <div class="folders">
+        <div class="folder" data-folder="video">
+          <button type="button" class="folder-tab" id="tab-video" aria-controls="folder-video" aria-expanded="true">Videography</button>
+          <div class="folder-edge" aria-hidden="true"></div>
+        </div>
+        <div class="folder" data-folder="edit">
+          <button type="button" class="folder-tab" id="tab-edit" aria-controls="folder-edit" aria-expanded="false">Video editing</button>
+          <div class="folder-edge" aria-hidden="true"></div>
+        </div>
+        <div class="folder" data-folder="motion">
+          <button type="button" class="folder-tab" id="tab-motion" aria-controls="folder-motion" aria-expanded="false">Motion</button>
+          <div class="folder-edge" aria-hidden="true"></div>
+        </div>
+        <div class="folder" data-folder="photo">
+          <button type="button" class="folder-tab" id="tab-photo" aria-controls="folder-photo" aria-expanded="false">Photography</button>
+          <div class="folder-edge" aria-hidden="true"></div>
+        </div>
+        <div class="folder-panel">
+          <div class="folder-body" id="folder-video" role="region" aria-labelledby="tab-video">
+            <div class="stamp-card stamp-cover">
+              <svg class="binder-clip" aria-hidden="true" width="58" height="74" viewBox="0 0 58 74"><path d="M17 30 C 12 12, 17 2, 29 2 C 41 2, 46 12, 41 30" fill="none" stroke="#B9BDC4" stroke-width="3.5" stroke-linecap="round"/><path d="M6 32 H52 L46 70 H12 Z" fill="#E28BAF"/><path d="M6 32 H52 L50 42 H8 Z" fill="#F2A9C7"/><path d="M14 66 H44" stroke="#C86F94" stroke-width="2"/></svg>
+              <span class="cover-script">Videography</span>
+              <span class="cover-caps">Selected projects · 2</span>
+            </div>
+            <a href="assets/work/street-food-review.mp4" class="stamp-card" data-media="video" data-title="Street Food Review" data-meta="Food content · 4K" aria-label="Play video: Street Food Review">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/street-food-review.jpg" alt="" loading="lazy"><span class="play-badge" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
+              <h3>Street Food Review</h3>
+              <span class="stamp-meta">Food content · 4K</span>
+            </a>
+            <a href="assets/work/micro-club-teaser.mp4" class="stamp-card" data-media="video" data-title="Micro Club Teaser" data-meta="Event teaser" aria-label="Play video: Micro Club Teaser">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/micro-club-teaser.jpg" alt="" loading="lazy"><span class="play-badge" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
+              <h3>Micro Club Teaser</h3>
+              <span class="stamp-meta">Event teaser</span>
+            </a>
+          </div>
+          <div class="folder-body" id="folder-edit" role="region" aria-labelledby="tab-edit" hidden>
+            <div class="stamp-card stamp-cover">
+              <svg class="binder-clip" aria-hidden="true" width="58" height="74" viewBox="0 0 58 74"><path d="M17 30 C 12 12, 17 2, 29 2 C 41 2, 46 12, 41 30" fill="none" stroke="#B9BDC4" stroke-width="3.5" stroke-linecap="round"/><path d="M6 32 H52 L46 70 H12 Z" fill="#E28BAF"/><path d="M6 32 H52 L50 42 H8 Z" fill="#F2A9C7"/><path d="M14 66 H44" stroke="#C86F94" stroke-width="2"/></svg>
+              <span class="cover-script">Editing</span>
+              <span class="cover-caps">Selected projects · 2</span>
+            </div>
+            <a href="assets/work/restaurant-review.mp4" class="stamp-card" data-media="video" data-title="Restaurant Review" data-meta="Food content · Reel" aria-label="Play video: Restaurant Review">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/restaurant-review.jpg" alt="" loading="lazy"><span class="play-badge" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
+              <h3>Restaurant Review</h3>
+              <span class="stamp-meta">Food content · Reel</span>
+            </a>
+            <a href="assets/work/customer-reactions.mp4" class="stamp-card" data-media="video" data-title="Customer Reactions" data-meta="Vox pop · Reel" aria-label="Play video: Customer Reactions">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/customer-reactions.jpg" alt="" loading="lazy"><span class="play-badge" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
+              <h3>Customer Reactions</h3>
+              <span class="stamp-meta">Vox pop · Reel</span>
+            </a>
+          </div>
+          <div class="folder-body" id="folder-motion" role="region" aria-labelledby="tab-motion" hidden>
+            <div class="stamp-card stamp-cover">
+              <svg class="binder-clip" aria-hidden="true" width="58" height="74" viewBox="0 0 58 74"><path d="M17 30 C 12 12, 17 2, 29 2 C 41 2, 46 12, 41 30" fill="none" stroke="#B9BDC4" stroke-width="3.5" stroke-linecap="round"/><path d="M6 32 H52 L46 70 H12 Z" fill="#E28BAF"/><path d="M6 32 H52 L50 42 H8 Z" fill="#F2A9C7"/><path d="M14 66 H44" stroke="#C86F94" stroke-width="2"/></svg>
+              <span class="cover-script">Motion</span>
+              <span class="cover-caps">Selected projects · 3</span>
+            </div>
+            <a href="assets/work/mctf-promo.mp4" class="stamp-card" data-media="video" data-title="MCTF 5.0" data-meta="Event promo" aria-label="Play video: MCTF 5.0">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/mctf-promo.jpg" alt="" loading="lazy"><span class="play-badge" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
+              <h3>MCTF 5.0</h3>
+              <span class="stamp-meta">Event promo</span>
+            </a>
+            <a href="assets/work/document-platform.mp4" class="stamp-card" data-media="video" data-title="Document Platform" data-meta="Product promo" aria-label="Play video: Document Platform">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/document-platform.jpg" alt="" loading="lazy"><span class="play-badge" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
+              <h3>Document Platform</h3>
+              <span class="stamp-meta">Product promo</span>
+            </a>
+            <a href="assets/work/microjam-logo.mp4" class="stamp-card" data-media="video" data-title="MicroJam" data-meta="Logo animation" aria-label="Play video: MicroJam">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/microjam-logo.jpg" alt="" loading="lazy"><span class="play-badge" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
+              <h3>MicroJam</h3>
+              <span class="stamp-meta">Logo animation</span>
+            </a>
+          </div>
+          <div class="folder-body" id="folder-photo" role="region" aria-labelledby="tab-photo" hidden>
+            <div class="stamp-card stamp-cover">
+              <svg class="binder-clip" aria-hidden="true" width="58" height="74" viewBox="0 0 58 74"><path d="M17 30 C 12 12, 17 2, 29 2 C 41 2, 46 12, 41 30" fill="none" stroke="#B9BDC4" stroke-width="3.5" stroke-linecap="round"/><path d="M6 32 H52 L46 70 H12 Z" fill="#E28BAF"/><path d="M6 32 H52 L50 42 H8 Z" fill="#F2A9C7"/><path d="M14 66 H44" stroke="#C86F94" stroke-width="2"/></svg>
+              <span class="cover-script">Photography</span>
+              <span class="cover-caps">Selected projects · 5</span>
+            </div>
+            <a href="assets/work/into-the-fog.jpg" class="stamp-card" data-media="photo" data-title="Into the Fog" data-meta="Landscape" aria-label="View photo: Into the Fog">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/into-the-fog-thumb.jpg" alt="" loading="lazy"></div>
+              <h3>Into the Fog</h3>
+              <span class="stamp-meta">Landscape</span>
+            </a>
+            <a href="assets/work/green-towers.jpg" class="stamp-card" data-media="photo" data-title="Green Towers" data-meta="Architecture" aria-label="View photo: Green Towers">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/green-towers-thumb.jpg" alt="" loading="lazy"></div>
+              <h3>Green Towers</h3>
+              <span class="stamp-meta">Architecture</span>
+            </a>
+            <a href="assets/work/pagoda.jpg" class="stamp-card" data-media="photo" data-title="Pagoda" data-meta="Travel" aria-label="View photo: Pagoda">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/pagoda-thumb.jpg" alt="" loading="lazy"></div>
+              <h3>Pagoda</h3>
+              <span class="stamp-meta">Travel</span>
+            </a>
+            <a href="assets/work/garden-portrait.jpg" class="stamp-card" data-media="photo" data-title="Garden Portrait" data-meta="Portrait" aria-label="View photo: Garden Portrait">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/garden-portrait-thumb.jpg" alt="" loading="lazy"></div>
+              <h3>Garden Portrait</h3>
+              <span class="stamp-meta">Portrait</span>
+            </a>
+            <a href="assets/work/ams-expo-1.jpg" class="stamp-card" data-media="photo" data-title="ICT Event" data-meta="Event coverage" aria-label="View photo: ICT Event">
+              <svg class="paper-clip" aria-hidden="true" width="22" height="58" viewBox="0 0 22 58"><path d="M15 14 V44 a5 5 0 0 1 -10 0 V10 a7 7 0 0 1 14 0 V46 a9 9 0 0 1 -18 0 V18" fill="none" stroke="#A9AEB6" stroke-width="2.6" stroke-linecap="round"/></svg>
+              <div class="stamp-thumb"><img src="assets/work/ams-expo-1-thumb.jpg" alt="" loading="lazy"></div>
+              <h3>ICT Event</h3>
+              <span class="stamp-meta">Event coverage</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="tools-line"><span>Tools</span>Premiere Pro · After Effects · DaVinci Resolve · CapCut · Illustrator</p>
+    </div>
+
+    <!-- IT: stack + projects -->
+    <div class="panel--it" data-panel="it" hidden>
+      <div class="sec-head">
+        <div class="sec-eyebrow">01 — STACK</div>
+        <h2 class="sec-title">What I <em>work with</em></h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <div class="stack-label">// languages</div>
+          <ul class="stack-list"><li>Java</li><li>C#</li><li>Python</li><li>JavaScript</li><li>HTML/CSS</li></ul>
+        </div>
+        <div class="stack-card">
+          <div class="stack-label">// frameworks</div>
+          <ul class="stack-list"><li>React</li><li>ASP.NET</li><li>ABP.io</li><li>Node.js</li><li>Express</li></ul>
+        </div>
+        <div class="stack-card">
+          <div class="stack-label">// ai &amp; data</div>
+          <ul class="stack-list"><li>Machine learning</li><li>Chatbots</li><li>AI apps</li><li>SQL</li></ul>
+        </div>
+        <div class="stack-card">
+          <div class="stack-label">// cloud &amp; tools</div>
+          <ul class="stack-list"><li>AWS</li><li>Docker</li><li>n8n</li><li>Git</li><li>Linux</li><li>Windows Server</li></ul>
+        </div>
+      </div>
+
+      <h3 class="sub-title">&gt; projects</h3>
+      <!-- Each row opens its summary below it (js: project rows).
+           Screenshots and videos open in the lightbox ([data-media]). -->
+      <ol class="proj-list">
+        <li class="proj proj--acc">
+          <button type="button" class="proj-head" aria-expanded="false" aria-controls="proj-edms">
+            <span class="proj-id">01</span>
+            <span class="proj-body"><span class="proj-title">EDMS</span><span class="proj-line">Multi-tenant SaaS document management · ITCOMP</span></span>
+            <span class="proj-tags">abp.io · react · elasticsearch</span>
+            <span class="proj-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="proj-detail" id="proj-edms" inert>
+            <div class="proj-detail-inner">
+          <article class="feature">
+            <a class="feature-shot" href="assets/work/edms/dashboard.jpg" data-media="photo" data-title="EDMS" data-meta="Dashboard" aria-label="View screenshot: EDMS dashboard">
+              <img src="assets/work/edms/dashboard-thumb.jpg" alt="EDMS dashboard with document counts, storage and an activity chart">
+            </a>
+            <div class="feature-body">
+              <div class="feature-meta">graduation project · ITCOMP · 2026</div>
+              <p>A multi-tenant SaaS document management system, built so ITCOMP could stop paying for third-party tools. Upload a paper form and it is read, tagged and searchable in seconds.</p>
+              <ul class="feature-points">
+                <li>Strict tenant isolation for every client</li>
+                <li>3-level security: roles + per-document access + clearance</li>
+                <li>AI OCR (Tesseract) fills the metadata automatically</li>
+                <li>Instant full-text search with Elasticsearch</li>
+              </ul>
+              <ul class="feature-tags">
+                <li>ABP.io</li><li>ASP.NET Core</li><li>EF Core</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>Elasticsearch</li><li>Docker</li>
+              </ul>
+              <a class="feature-btn" href="assets/work/document-platform.mp4" data-media="video" data-poster="assets/work/document-platform.jpg" data-title="EDMS" data-meta="Explainer video">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>
+                Watch explainer
+              </a>
+            </div>
+            <div class="feature-gallery">
+              <a href="assets/work/edms/documents.jpg" data-media="photo" data-title="EDMS" data-meta="Document library" aria-label="View screenshot: document library"><img src="assets/work/edms/documents-thumb.jpg" alt="" loading="lazy"><span>library</span></a>
+              <a href="assets/work/edms/host-console.jpg" data-media="photo" data-title="EDMS" data-meta="Multi-tenant host console" aria-label="View screenshot: host console"><img src="assets/work/edms/host-console-thumb.jpg" alt="" loading="lazy"><span>tenants</span></a>
+              <a href="assets/work/edms/metadata.jpg" data-media="photo" data-title="EDMS" data-meta="Custom metadata" aria-label="View screenshot: metadata settings"><img src="assets/work/edms/metadata-thumb.jpg" alt="" loading="lazy"><span>metadata</span></a>
+            </div>
+          </article>
+            </div>
+          </div>
+        </li>
+        <li class="proj proj--acc">
+          <button type="button" class="proj-head" aria-expanded="false" aria-controls="proj-swiftdeliver">
+            <span class="proj-id">02</span>
+            <span class="proj-body"><span class="proj-title">SwiftDeliver</span><span class="proj-line">Transport &amp; delivery management system</span></span>
+            <span class="proj-tags">next.js · django</span>
+            <span class="proj-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="proj-detail" id="proj-swiftdeliver" inert>
+            <div class="proj-detail-inner">
+          <article class="feature">
+            <a class="feature-shot" href="assets/work/delivery/dashboard.jpg" data-media="photo" data-title="SwiftDeliver" data-meta="Dashboard" aria-label="View screenshot: SwiftDeliver dashboard">
+              <img src="assets/work/delivery/dashboard-thumb.jpg" alt="SwiftDeliver dashboard with shipments, deliveries, revenue and a shipment status chart">
+            </a>
+            <div class="feature-body">
+              <div class="feature-meta">team project · 2026</div>
+              <p>A transport &amp; delivery management system: create shipments, plan delivery tours, track parcels and bill clients, all from one dashboard.</p>
+              <ul class="feature-points">
+                <li>Shipments, tours, drivers and vehicles</li>
+                <li>Live parcel tracking on Google Maps + public tracking page</li>
+                <li>Automatic pricing rules and PDF invoices</li>
+                <li>Incidents, claims and role-based access (JWT)</li>
+              </ul>
+              <ul class="feature-tags">
+                <li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind</li><li>Django REST</li><li>Python</li><li>Google Maps API</li>
+              </ul>
+            </div>
+            <div class="feature-gallery">
+              <a href="assets/work/delivery/shipments.jpg" data-media="photo" data-title="SwiftDeliver" data-meta="Shipments journal" aria-label="View screenshot: shipments journal"><img src="assets/work/delivery/shipments-thumb.jpg" alt="" loading="lazy"><span>shipments</span></a>
+              <a href="assets/work/delivery/roles.jpg" data-media="photo" data-title="SwiftDeliver" data-meta="Roles &amp; permissions" aria-label="View screenshot: roles and permissions"><img src="assets/work/delivery/roles-thumb.jpg" alt="" loading="lazy"><span>roles</span></a>
+              <a href="assets/work/delivery/login.jpg" data-media="photo" data-title="SwiftDeliver" data-meta="Sign in" aria-label="View screenshot: sign in"><img src="assets/work/delivery/login-thumb.jpg" alt="" loading="lazy"><span>login</span></a>
+            </div>
+          </article>
+            </div>
+          </div>
+        </li>
+        <li class="proj proj--acc">
+          <button type="button" class="proj-head" aria-expanded="false" aria-controls="proj-medical">
+            <span class="proj-id">03</span>
+            <span class="proj-body"><span class="proj-title">Medical Office Manager</span><span class="proj-line">Console app to run a medical practice</span></span>
+            <span class="proj-tags">java · oop</span>
+            <span class="proj-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="proj-detail" id="proj-medical" inert>
+            <div class="proj-detail-inner">
+          <article class="feature feature--text">
+            <div class="feature-body">
+              <div class="feature-meta">team project · 2024 · 4 developers</div>
+              <p>A menu-driven Java application for a medical practice. Staff manage doctors and patients, book appointments, record consultations and issue prescriptions and medical certificates.</p>
+              <ul class="feature-points">
+                <li>Patients, doctors and medical records</li>
+                <li>Appointments and consultations with fees</li>
+                <li>Prescriptions and medical certificates</li>
+                <li>Object-oriented design: one class per domain object + managers</li>
+              </ul>
+              <ul class="feature-tags"><li>Java</li><li>OOP</li><li>Collections</li><li>Git</li></ul>
+              <a class="feature-btn" href="https://github.com/elhadi-zertal/Cabinet_medical_repo" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================= ABOUT ======================= -->
+<section id="about" class="section">
+  <div class="wrap about">
+    <div class="sec-head">
+      <div class="sec-eyebrow">02 — ABOUT</div>
+      <h2 class="sec-title">Two sides, <em>one person</em></h2>
+    </div>
+    <!-- the text follows the badge side: the multimedia job or the IT job -->
+    <div class="about-body" data-panel="mm">
+      <p class="about-text">Freelance videographer and editor. I film, cut and animate content for brands and creators, from the first shot to the final export.</p>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Algiers, Algeria</dd></div>
+        <div><dt>Focus</dt><dd>Video · Motion · Photo</dd></div>
+        <div><dt>Tools</dt><dd>Premiere · After Effects · DaVinci</dd></div>
+        <div><dt>Certified</dt><dd>Premiere Pro Trainer · 2026</dd></div>
+        <div><dt>Status</dt><dd><span class="dot" aria-hidden="true"></span>Open to freelance</dd></div>
+      </dl>
+    </div>
+    <div class="about-body" data-panel="it" hidden>
+      <p class="about-text">High Performance Computing student at USTHB. I build web apps, AI tools and cloud services, from the database to the interface.</p>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Algiers, Algeria</dd></div>
+        <div><dt>Studying</dt><dd>HPC · USTHB</dd></div>
+        <div><dt>Focus</dt><dd>Web · AI · Cloud</dd></div>
+        <div><dt>Certified</dt><dd>AWS AI Practitioner · Web Development</dd></div>
+        <div><dt>In progress</dt><dd>AWS Cloud Practitioner · IELTS</dd></div>
+        <div><dt>Status</dt><dd><span class="dot" aria-hidden="true"></span>Open to jobs &amp; freelance</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTACT ======================= -->
+<section id="contact" class="section section--contact">
+  <div class="wrap contact">
+    <div class="sec-eyebrow">03 — CONTACT</div>
+    <h2 class="sec-title contact-title">Let’s work <em>together</em></h2>
+    <a class="contact-mail" href="mailto:hibafethallah25@gmail.com">hibafethallah25@gmail.com</a>
+    <div class="contact-actions">
+      <a class="cbtn cbtn--primary" href="https://wa.me/213666100788" target="_blank" rel="noopener">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.6-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg>
+        WhatsApp
+      </a>
+      <!-- put your CV at assets/cv/Hiba-Fethallah-CV.pdf -->
+      <a class="cbtn cbtn--ghost" href="assets/cv/Hiba-Fethallah-CV.pdf" download>
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Download CV
+      </a>
+    </div>
+    <ul class="socials">
+      <li><a href="https://www.linkedin.com/in/hiba-fethallah-508b42295/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/hiba-th" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.instagram.com/fet_hiba/" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+  </div>
+  <footer class="site-footer wrap">
+    <span>© 2026 Hiba Fethallah</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</section>
+
+<!-- Lightbox for the work (js: openLightbox) -->
+<dialog class="lightbox" aria-label="Project viewer">
+  <button type="button" class="lightbox-close" aria-label="Close">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <div class="lightbox-media"></div>
+  <p class="lightbox-caption"><strong></strong><span></span></p>
+</dialog>
+
+<script src="js/main.js?v=10"></script>
+</body>
+</html>

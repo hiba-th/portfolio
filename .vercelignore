@@ -1,0 +1,6 @@
+# Files that stay on this computer and are never uploaded to Vercel
+PROFILE.md
+README.md
+.env*
+.vercel
+.gitignore
